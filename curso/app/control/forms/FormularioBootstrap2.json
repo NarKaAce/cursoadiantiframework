@@ -1,0 +1,121 @@
+{
+  "paginas": {
+    "1": "Principal",
+    "2": "Resto"
+  },
+  "objetos":
+  [  {
+    "pagina": 1,
+    "ordem":10,
+    "id": "id_id",
+    "descricao": "ID",
+    "tipo": "entry",
+    "linha": 1,
+    "props": {
+      "editavel": false
+    },
+    "acao":"sim"
+   },
+    {"pagina": 1,
+      "ordem": 2,
+      "id": "id_descricao",
+      "descricao": "Descrição",
+      "tipo": "entry",
+      "linha": 2,
+      "props": {
+        "placeholder": "Digite aqui a descrição",
+        "dica": "Digite aqui a descrição"
+      }
+    },
+    { "pagina": 1,
+      "ordem": 3,
+      "id": "id_senha",
+      "descricao": "Senha",
+      "tipo": "senha",
+      "linha": 3,
+      "props": {
+
+      }
+    },
+    { "pagina": 1,
+      "ordem": 4,
+      "id": "id_dt_criacao",
+      "descricao": "Dt. Criação",
+      "tipo": "dateTime",
+      "linha": 4,
+      "props": {
+        "formato_mascara": "dd/mm/yyyy hh:ii",
+        "formato_banco": "yyyy-mm-dd hh:ii",
+        "tamanho": "100%",
+        "valor": "date('Y-m-d H:i')"
+      }
+    },
+    {"pagina": 1,
+      "ordem": 5,
+      "id": "id_dt_expiracao",
+      "descricao": "Data Expiração",
+      "tipo": "date",
+      "linha": 4,
+      "props": {
+        "formato_mascara": "dd/mm/yyyy",
+        "formato_banco": "yyyy-mm-dd",
+        "tamanho": "100%",
+        "valor": "date('Y-m-d')"
+      }
+    },
+    {"pagina": 1,
+      "ordem": 6,
+      "id": "id_valor",
+      "descricao": "Valor",
+      "tipo": "entry",
+      "linha": 5,
+      "props": {
+        "mascara_numerica": {
+          "casas_decimais":"2",
+          "separador_decimal": ",",
+          "separador_milhar":".",
+          "replaceOnPost": true,
+          "reverter": false,
+          "aceita_negativo": true
+        },
+        "tamanho": "100%",
+        "valor": "123,45"
+      }
+    },
+    {"pagina": 1,
+      "ordem": 7,
+      "id": "id_cor",
+      "descricao": "Cor",
+      "tipo": "color",
+      "linha": 5,
+      "props": {
+        "tamanho": "100%"
+      }
+    },
+    {"pagina": 1,
+      "ordem": 8,
+      "id": "id_peso",
+      "descricao": "Peso",
+      "tipo": "spinner",
+      "linha": 6,
+      "props": {
+        "tamanho": "100%",
+        "valor": "30",
+        "range": "1,100,0.1"
+      }
+    },
+    {"pagina": 2,
+      "ordem": 9,
+      "id": "id_tipo",
+      "descricao": "Tipo",
+      "tipo": "combo",
+      "linha": 6,
+      "props": {
+        "tamanho": "100%",
+        "lista_opcoes": {"a" : "Opção A",
+          "b" : "Opção B",
+          "c" : "Opção C"}
+      }
+    }
+  ]
+}
